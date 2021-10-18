@@ -1,0 +1,46 @@
+[
+    {
+        "label": "pytest",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "pytest",
+        "description": "pytest",
+        "detail": "pytest",
+        "documentation": {}
+    },
+    {
+        "label": "code",
+        "importPath": "code",
+        "description": "code",
+        "isExtraImport": true,
+        "detail": "code",
+        "documentation": {}
+    },
+    {
+        "label": "employee",
+        "kind": 6,
+        "importPath": "code.code",
+        "description": "code.code",
+        "peekOfCode": "class employee:\n    def __init__(self, email: str, holidays_left: int) -> None:\n        self.email: str = email\n        self.holidays_left: list[str] = holidays_left\ndef get_emails_of_users_withouth_holiday_left(employees: list[employee]) -> list[str]:\n    return [employee.email for employee in employees if len(employee.holidays_left) == 0]",
+        "detail": "code.code",
+        "documentation": {}
+    },
+    {
+        "label": "get_emails_of_users_withouth_holiday_left",
+        "kind": 2,
+        "importPath": "code.code",
+        "description": "code.code",
+        "peekOfCode": "def get_emails_of_users_withouth_holiday_left(employees: list[employee]) -> list[str]:\n    return [employee.email for employee in employees if len(employee.holidays_left) == 0]",
+        "detail": "code.code",
+        "documentation": {}
+    },
+    {
+        "label": "test_get_emails_of_users_withouth_holiday_left",
+        "kind": 2,
+        "importPath": "tests.test_code",
+        "description": "tests.test_code",
+        "peekOfCode": "def test_get_emails_of_users_withouth_holiday_left():\n    employees: list[code.employee] = [\n        code.employee('hi@hi.dk', [\"2021 11/26\"]),\n        code.employee('mi@hi.dk', [\"2021 11/24\", \"2021 11/25\", \"2021 11/26\"]),\n        code.employee('ni@hi.dk', []),\n        code.employee('ii@hi.dk', []),\n        code.employee('ki@hi.dk', []),\n        code.employee('li@hi.dk', []),\n        code.employee('li@hi.dk', [])\n    ]",
+        "detail": "tests.test_code",
+        "documentation": {}
+    }
+]
